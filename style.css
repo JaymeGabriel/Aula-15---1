@@ -1,0 +1,119 @@
+/* Estilos Gerais */
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header"
+        "sobre servicos"
+        "contato contato";
+    gap: 20px;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos do Header */
+header {
+    grid-area: header;
+    background-color: #333;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+}
+
+/* Estilos do Main */
+main {
+    grid-area: sobre;
+    background-color: white;
+    border-radius: 5px;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilos do Aside */
+aside {
+    grid-area: servicos;
+    background-color: white;
+    border-radius: 5px;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilos da Seção de Contato */
+section#contato {
+    grid-area: contato;
+    background-color: white;
+    border-radius: 5px;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilos das Heading Tags */
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Estilos para Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
